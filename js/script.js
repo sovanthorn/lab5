@@ -7,10 +7,10 @@ import { userCard } from "../component/userCard.js";
 const renderArea = document.querySelector("#render-area");
 const cardProduct = await getData("products");
 
-const userCards = document.querySelector("#User");
-const cardProduct2 = await getData("user");
+const userCards = document.querySelector("#Users");
+const cardProduct2 = await getData("users");
 
-cardProduct1.map((product) => {
+cardProduct.map((product) => {
     renderArea.innerHTML += cardProduct(product);
   });
   
